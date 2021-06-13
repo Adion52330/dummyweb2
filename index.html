@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/4.jpg" type="image/x-icon" />
+    <title>Earn Your Degree Online | American Military Undiversity</title>
+  </head>
+  <body>
+    <header>
+      <main>
+        <a href="#" id="ho">
+          <img src="assets/1.jpg" id="jo" />
+        </a>
+      </main>
+      <nav style="float: right">
+        <a href="#" id="yo">CALL NOW: 877-755-2787</a>
+        <a href="#" id="abc">Apply At No Cost</a>
+      </nav>
+    </header>
+    <section id="container" style="display: flex">
+      <div class="ku">
+        <h1>Roots In The Military</h1>
+        <h1>Relevant To All</h1>
+      </div>
+      <div id="main_form">
+        <div id="hu">
+          <h1>Want to Learn More?</h1>
+          <h3>Request Information</h3>
+        </div>
+        <form onsubmit="return jj()">
+          <div id="names">
+            <p>
+              First Name: <span style="padding-left: 110px">Last Name:</span>
+            </p>
+            <input type="text" id="pro" required placeholder="First Name" />
+            <input type="text" id="uu" required placeholder="Last Name" />
+          </div>
+          <div id="email">
+            <p>E-Mail:</p>
+            <input type="email" name="em" id="em" placeholder="E-Mail" />
+          </div>
+          <div id="pn">
+            <p>
+              Phone(optional):
+              <span style="padding-left: 60px">Postal Number:</span>
+            </p>
+            <input type="text" id="ph" placeholder="Phone Number" />
+            <input type="text" id="po" placeholder="Postal Code" />
+          </div>
+          <div id="mil">
+            <p>Military:</p>
+            <select name="m" id="m">
+              <option value="sel">Please Select</option>
+              <option value="no">No Affiliation</option>
+              <option value="ac">Active Duty</option>
+              <option value="na">National Guard</option>
+              <option value="re">Reserved</option>
+              <option value="ve">Veteran</option>
+              <option value="sp">Military Spouse</option>
+              <option value="de">Military Dependent</option>
+            </select>
+          </div>
+          <div>
+            <input type="submit" value="SUBMIT" id="sub" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <p>
+          American Military University is part of American Public University
+          System (APUS), which is accredited by the Higher Learning Commission
+          (HLC), certified to operate by SCHEV and is a wholly owned subsidiary
+          of American Public Education, Inc. (APEI). Pursuant to a contractual
+          arrangement, APEI provides certain services for the benefit of APUS,
+          subject to APUS oversight and ultimate authority. Pursuant to a
+          license, APEI may use APUS’s trademarks and other intellectual
+          property in its performance of those services. American Public
+          University System, American Public University, and American Military
+          University are not affiliated with American University or the U.S.
+          Military.
+        </p>
+        <p>
+          &copy; 2021 American Public University System, 111 W. Congress Street,
+          Charles Town, WV 25414 | Toll Free: 877-755-2787
+        </p>
+        <p>
+          <a href="#">Privacy Policy</a> | <a href="#">Terms</a> |
+          <a href="#">Disclosure</a> |
+          <a href="#"
+            >Do Not Sell My Personal Information (CA residents only)</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function shadow() {
+      document.getElementById("abc").style.border = "yellowgreen 3px solid";
+    }
+
+    v = setInterval(shadow, 2000);
+
+    function jj() {
+      if (document.getElementById("m").value == "sel") {
+        alert("Military can't be 'Please Select'");
+        return false;
+      }
+      if (
+        document.getElementById("pro").value ==
+        document.getElementById("uu").value
+      ) {
+        alert("First Name and Last Name are the same");
+        return false;
+      }
+    }
+  </script>
+</html>
